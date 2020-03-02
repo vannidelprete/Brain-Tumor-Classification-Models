@@ -32,10 +32,10 @@ Y_pred_prob = log_reg.predict_proba(X_test)
 
 acc = accuracy_score(Y_test, Y_pred)
 log_loss_score = log_loss(Y_test, Y_pred_prob)
-
-print("ACCURACY: " + str(acc) + "\n")
+print("======== LOGISTIC REGRESSION WITH ALL FEATURE =========")
+print("ACCURACY: " + str(acc))
 print("LOG LOSS: " + str(log_loss_score) + "\n")
-
+print("=======================================================")
 #======== LOGISTIC REGRESSION WITH PCA 2D =========
 
 X = brain_tumor_data.drop('Target', axis=1).values
@@ -61,8 +61,10 @@ Y_pred_prob = log_reg.predict_proba(X_test)
 acc = accuracy_score(Y_test, Y_pred)
 log_loss_score = log_loss(Y_test, Y_pred_prob)
 
-print("ACCURACY: " + str(acc) + "\n")
+print("========== LOGISTIC REGRESSION WITH PCA 2D ============")
+print("ACCURACY: " + str(acc))
 print("LOG LOSS: " + str(log_loss_score) + "\n")
+print("=======================================================")
 
 #========== DATA VISUALIZATION 2D ===========
 fig = plt.figure(figsize=(8, 8))
@@ -109,8 +111,10 @@ Y_pred_prob = log_reg.predict_proba(X_test)
 acc = accuracy_score(Y_test, Y_pred)
 log_loss_score = log_loss(Y_test, Y_pred_prob)
 
-print("ACCURACY: " + str(acc) + "\n")
+print("========== LOGISTIC REGRESSION WITH PCA 3D ============")
+print("ACCURACY: " + str(acc))
 print("LOG LOSS: " + str(log_loss_score) + "\n")
+print("=======================================================")
 
 #=========== DATA VISUALIZATION 3D ================
 fig = plt.figure()
@@ -152,5 +156,7 @@ Y_pred_prob = log_reg.predict_proba(X_test)
 acc = accuracy_score(Y_test, Y_pred)
 log_loss_score = log_loss(Y_test, Y_pred_prob)
 
-print("ACCURACY: " + str(acc) + "\n")
+print("========== LOGISTIC REGRESSION WITH PCA .95 ===========")
+print("ACCURACY: " + str(acc))
 print("LOG LOSS: " + str(log_loss_score) + "\n")
+print("=======================================================")
