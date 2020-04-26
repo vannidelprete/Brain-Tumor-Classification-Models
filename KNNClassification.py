@@ -6,6 +6,7 @@ from sklearn.metrics import log_loss
 from sklearn.metrics import accuracy_score
 from sklearn.preprocessing import StandardScaler
 from sklearn.neighbors import KNeighborsClassifier
+import matplotlib.pyplot as plt
 
 
 #========= READ DATASET =======
@@ -37,8 +38,9 @@ print("ACCURACY: " + str(acc) + "\n")
 print("LOG LOSS: " + str(log_loss_score) + "\n")
 
 #=========== IMPROVE THE MODEL ==========
-Ks = [1, 2, 3, 4, 5, 7, 10, 12, 15, 20]
-
+Ks = [1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+accuracys = np.array([])
+scores = np.array([])
 for K in Ks:
     print("============ "+"K="+str(K)+" ============")
     knn = KNeighborsClassifier(n_neighbors=K)
@@ -53,9 +55,26 @@ for K in Ks:
     Y_prob = knn.predict_proba(X_test)
 
     acc = accuracy_score(Y_test, Y_pred)
-
+    accuracys = np.append(accuracys,acc)
     log_loss_score = log_loss(Y_test, Y_prob)
+    scores = np.append(scores, log_loss_score)
 
     print("ACCURACY: " + str(acc))
     print("LOG LOSS: " + str(log_loss_score) + "\n")
     print("===========================================")
+
+
+#============= PLOTTING =====================
+x_plot = np.array(Ks)
+y_plot = accuracys
+y_plot_2 = scores
+
+plt.plot(x_plot, y_plot, 'r--', label="Accuracy")
+plt.xticks(np.arange(x_plot.min(), x_plot.max(), 1))
+plt.legend()
+plt.show()
+
+plt.plot(x_plot, y_plot_2, 'bs', label='Log loss score')
+plt.xticks(np.arange(x_plot.min(), x_plot.max(), 1))
+plt.legend()
+plt.show()
