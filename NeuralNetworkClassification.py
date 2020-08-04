@@ -31,10 +31,8 @@ y_pred = mlp.predict(X_test)
 y_prob = mlp.predict_proba(X_test)
 
 accuracy_train = accuracy_score(Y_train, y_pred_train)
-accuracy_test = accuracy_score(Y_test, y_pred)
 
 loss_train = log_loss(Y_train, y_prob_train)
-loss_test = log_loss(Y_test, y_prob)
 
-print("ACCURACY: TRAIN=%.4f TEST=%.4f" % (accuracy_train, accuracy_test))
-print("LOG LOSS: TRAIN=%.4f TEST=%.4f" % (loss_train, loss_test))
+print("ACCURACY: TRAIN=%.4f" % accuracy_train)
+print("LOG LOSS: TRAIN=%.4f" % loss_train)

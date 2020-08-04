@@ -25,7 +25,7 @@ X = ss.fit_transform(X)
 
 X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.3)
 
-log_reg = LogisticRegression(solver='lbfgs')
+log_reg = LogisticRegression()
 log_reg.fit(X_train, Y_train)
 Y_pred = log_reg.predict(X_test)
 Y_pred_prob = log_reg.predict_proba(X_test)

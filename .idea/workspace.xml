@@ -20,18 +20,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fdd0e099-5e56-4782-b115-3f9714aa7eca" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/NeuralNetworkClassification.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/Brain-Tumor-Classification-Models.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Brain-Tumor-Classification-Models.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/R_User_Library.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/R_User_Library.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Data/bt_dataset_t3.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Data/bt_dataset_t3.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Data/bt_dataset_t3_fixed.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Data/bt_dataset_t3_fixed.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DataPreprocessing.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataPreprocessing.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KNNClassification.py" beforeDir="false" afterPath="$PROJECT_DIR$/KNNClassification.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LogisticRegressionClassification.py" beforeDir="false" afterPath="$PROJECT_DIR$/LogisticRegressionClassification.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNetworkClassification.py" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNetworkClassification.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SVMClassification.py" beforeDir="false" afterPath="$PROJECT_DIR$/SVMClassification.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -170,8 +171,8 @@
       <list>
         <item itemvalue="Python.NeuralNetworkClassification" />
         <item itemvalue="Python.SVMClassification" />
-        <item itemvalue="Python.LogisticRegressionClassification" />
         <item itemvalue="Python.KNNClassification" />
+        <item itemvalue="Python.LogisticRegressionClassification" />
         <item itemvalue="Python.DataPreprocessing" />
       </list>
     </recent_temporary>
@@ -199,24 +200,49 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1345" height="570" key="GridCell.Tab.0.bottom" timestamp="1595857354538">
+    <state x="568" y="227" key="#Notifications" timestamp="1596381482011">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="570" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1595857354538" />
-    <state width="1345" height="570" key="GridCell.Tab.0.center" timestamp="1595857354538">
+    <state x="568" y="227" key="#Notifications/0.0.1366.728@0.0.1366.728" timestamp="1596381482011" />
+    <state x="363" y="100" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1596380859821">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="570" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1595857354538" />
-    <state width="1345" height="570" key="GridCell.Tab.0.left" timestamp="1595857354538">
+    <state x="363" y="100" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.728@0.0.1366.728" timestamp="1596380859821" />
+    <state width="1345" height="570" key="GridCell.Tab.0.bottom" timestamp="1596535458119">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="570" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1595857354538" />
-    <state width="1345" height="570" key="GridCell.Tab.0.right" timestamp="1595857354538">
+    <state width="1345" height="570" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1596535458119" />
+    <state width="1345" height="570" key="GridCell.Tab.0.center" timestamp="1596535458119">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="570" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1595857354538" />
+    <state width="1345" height="570" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1596535458119" />
+    <state width="1345" height="570" key="GridCell.Tab.0.left" timestamp="1596535458119">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="570" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1596535458119" />
+    <state width="1345" height="570" key="GridCell.Tab.0.right" timestamp="1596535458119">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="570" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1596535458119" />
+    <state width="1345" height="223" key="GridCell.Tab.1.bottom" timestamp="1596295276164">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="223" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1596295276164" />
+    <state width="1345" height="223" key="GridCell.Tab.1.center" timestamp="1596295276164">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="223" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1596295276164" />
+    <state width="1345" height="223" key="GridCell.Tab.1.left" timestamp="1596295276164">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="223" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1596295276164" />
+    <state width="1345" height="223" key="GridCell.Tab.1.right" timestamp="1596295276164">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="223" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1596295276164" />
     <state x="184" y="9" key="SettingsEditor" timestamp="1595852693105">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
