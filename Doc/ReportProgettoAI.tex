@@ -1,0 +1,140 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% LaTeX book template                           %%
+%% Author:  Amber Jain (http://amberj.devio.us/) %%
+%% License: ISC license                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[a4paper,11pt]{book}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Source: http://en.wikibooks.org/wiki/LaTeX/Hyperlinks %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{textcomp}
+\usepackage[english]{babel}
+\usepackage[a4paper,top=2cm,bottom=2cm,left=2cm,right=2cm]{geometry}
+\usepackage{lscape}
+\usepackage{caption}
+\usepackage{amsmath}
+\usepackage{listingsutf8}
+\usepackage{listings}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage{epstopdf}
+\usepackage[ruled]{algorithm2e}
+\usepackage{xcolor}
+\usepackage{graphics}
+\usepackage{guit}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+	backgroundcolor=\color{backcolour},   
+	commentstyle=\color{codegreen},
+	keywordstyle=\color{magenta},
+	numberstyle=\tiny\color{codegray},
+	stringstyle=\color{codepurple},
+	basicstyle=\ttfamily\footnotesize,
+	language = Java,
+	frameround=fttt,
+	frame = trBL,
+	firstnumber = last,
+	breakatwhitespace=false,         
+	breaklines=true,                 
+	captionpos=b,                    
+	keepspaces=true,                 
+	numbers=left,                    
+	numbersep=5pt,                  
+	showspaces=false,                
+	showstringspaces=false,
+	showtabs=false,                  
+	tabsize=2
+}
+
+\lstset{style=mystyle}
+
+\captionsetup{tableposition=top,figureposition=bottom,font=small}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 'dedication' environment: To add a dedication paragraph at the start of book %
+% Source: http://www.tug.org/pipermail/texhax/2010-June/015184.html            %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newenvironment{dedication}
+{
+   \cleardoublepage
+   \thispagestyle{empty}
+   \vspace*{\stretch{1}}
+   \hfill\begin{minipage}[t]{0.66\textwidth}
+   \raggedright
+}
+{
+   \end{minipage}
+   \vspace*{\stretch{3}}
+   \clearpage
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Chapter quote at the start of chapter        %
+% Source: http://tex.stackexchange.com/a/53380 %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\makeatletter
+\renewcommand{\@chapapp}{}% Not necessary...
+\newenvironment{chapquote}[2][2em]
+  {\setlength{\@tempdima}{#1}%
+   \def\chapquote@author{#2}%
+   \parshape 1 \@tempdima \dimexpr\textwidth-2\@tempdima\relax%
+   \itshape}
+  {\par\normalfont\hfill--\ \chapquote@author\hspace*{\@tempdima}\par\bigskip}
+\makeatother
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% First page of book which contains 'stuff' like: %
+%  - Book title, subtitle                         %
+%  - Book author name                             %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Book's title and subtitle
+\title{
+	\includegraphics[width=0.7\textwidth]{image/UniBg.png}
+	\\ \Huge \textbf{Tecniche di classificazione per il riconoscimento di un tumore al cervello} \\ \huge \textit{\textbf{Documentazione progettuale}} \\ \bigskip \huge Progetto del corso di Intelligenza Artificiale\\ Università degli Studi di Bergamo}
+% Author
+\author{\textsc{Del Prete Giovanni - 1035205}}
+
+\begin{document}
+	\maketitle
+	\thispagestyle{empty}
+	\mainmatter
+	\chapter{Introduzione}
+	\input{capitoli/Introduzione.tex}
+	\chapter{Data Preprocessing}
+	\input{capitoli/DataPreprocessing.tex}
+	\chapter{Regressione Logistica}
+	\input{capitoli/RegressioneLogistica.tex}
+	\chapter{K-Nearest Neighbors}
+	\input{capitoli/KNN.tex}
+	\chapter{Kernel SVM}
+	\input{capitoli/KernelSVM.tex}
+	\chapter{Classificazione con Multi-Layer Perceptron}
+	\input{capitoli/MLPC.tex}
+	\chapter*{Bibliografia}
+	\begin{itemize}
+		\item Machine Learning con Python: corso pratico di Profession AI 
+		
+		\href{https://www.udemy.com/course/machine-learning-pratico}{https://www.udemy.com/course/machine-learning-pratico}
+		
+		Corso di tutorial iniziale che mi ha fornito gli strumenti di base per svolgere il progetto.
+		\item Documentazione di scikit-learn
+		
+		\href{https://scikit-learn.org/stable/index.html}{https://scikit-learn.org/stable/index.html}
+		
+		\item Slide del corso di Intelligenza Artificiale tenuto dal prof. Francesco Trovò
+		
+		\href{https://trovo.faculty.polimi.it/aibg_2018_2019.html}{https://trovo.faculty.polimi.it/aibg\_2018\_2019.html}
+	\end{itemize}
+\end{document}

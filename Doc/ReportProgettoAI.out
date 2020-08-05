@@ -1,0 +1,12 @@
+\BOOKMARK [0][-]{chapter.1}{Introduzione}{}% 1
+\BOOKMARK [0][-]{chapter.2}{Data Preprocessing}{}% 2
+\BOOKMARK [0][-]{chapter.3}{Regressione Logistica}{}% 3
+\BOOKMARK [1][-]{section.3.1}{Regressione Logistica con tutte le feature}{chapter.3}% 4
+\BOOKMARK [1][-]{section.3.2}{Regressione Logistica con Dimensionality Reduction}{chapter.3}% 5
+\BOOKMARK [1][-]{section.3.3}{Conclusione sulla Regressione Logistica}{chapter.3}% 6
+\BOOKMARK [0][-]{chapter.4}{K-Nearest Neighbors}{}% 7
+\BOOKMARK [1][-]{section.4.1}{Conclusioni finali sul KNN}{chapter.4}% 8
+\BOOKMARK [0][-]{chapter.5}{Kernel SVM}{}% 9
+\BOOKMARK [1][-]{section.5.1}{Conclusioni su classificazione con SVM}{chapter.5}% 10
+\BOOKMARK [0][-]{chapter.6}{Classificazione con Multi-Layer Perceptron}{}% 11
+\BOOKMARK [1][-]{section.6.1}{Conclusioni su MLP}{chapter.6}% 12

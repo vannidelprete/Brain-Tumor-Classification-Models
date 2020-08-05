@@ -21,7 +21,7 @@ X = ss.fit_transform(X)
 X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.3)
 
 #========= MULTI-LAYER PERCEPTRON CLASSIFICATION ============
-mlp = MLPClassifier(hidden_layer_sizes=(100,), verbose=True, max_iter=300)
+mlp = MLPClassifier(hidden_layer_sizes=(100,100), activation='relu', verbose=True, max_iter=300)
 mlp.fit(X_train, Y_train)
 
 y_pred_train = mlp.predict(X_train)
